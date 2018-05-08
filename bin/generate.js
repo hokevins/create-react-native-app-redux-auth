@@ -34,7 +34,7 @@ console.log(chalk.green('Generating your new, poppin\' fresh application...'));
 
 copyFiles()
 .then(renameGitignore)
-.then(fs.writeFile(path.join(__dirname, '../package.json'), 'TEST', function (err) {
+.then(fs.writeFile(path.join(__dirname, './package.json'), 'TEST', function (err) {
   if (err) throw err;
   console.log('Saved!');
 }))
