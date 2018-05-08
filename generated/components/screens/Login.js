@@ -8,17 +8,17 @@ class Login extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      username: '',
+      email: '',
       password: '',
       error: '' || (this.props.navigation.state.params && this.props.navigation.state.params.error)
     };
-    this.handleChangeUsername = this.handleChangeUsername.bind(this);
+    this.handleChangeEmail = this.handleChangeEmail.bind(this);
     this.handleChangePassword = this.handleChangePassword.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChangeUsername(value) {
-    this.setState({username: value});
+  handleChangeEmail(value) {
+    this.setState({email: value});
   }
 
   handleChangePassword(value) {
@@ -26,15 +26,15 @@ class Login extends React.Component {
   }
 
   handleSubmit() {
-    const username = this.state.username;
+    const email = this.state.email;
     const password = this.state.password;
     this.props.login({
-      username,
+      email,
       password
     }, this.props.navigation);
     // clear the state after login for security
     this.setState({
-      username: '',
+      email: '',
       password: '',
       error: ''
     });
@@ -45,16 +45,16 @@ class Login extends React.Component {
     <KeyboardAvoidingView behavior="position" style={styles.container}>
       <ScrollView>
         <Text style={styles.error}>{this.state.error}</Text>
-        <Text style={styles.textLabel}>Username</Text>
+        <Text style={styles.textLabel}>Email</Text>
         <TextInput
           style={styles.textInput}
           autoCapitalize="none"
           autoCorrect={false}
           maxLength={15}
-          placeholder="USERNAME"
+          placeholder="EMAIL"
           placeholderTextColor="tomato"
-          value={this.state.username}
-          onChangeText={(username) => this.handleChangeUsername(username)}
+          value={this.state.email}
+          onChangeText={(email) => this.handleChangeEmail(email)}
         />
         <Text style={styles.textLabel}>Password</Text>
         <TextInput
@@ -79,7 +79,7 @@ class Login extends React.Component {
           onPress={() => {
             this.props.navigation.navigate('Signup');
             this.setState({
-              username: '',
+              email: '',
               password: '',
               error: ''
             });

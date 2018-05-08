@@ -8,19 +8,19 @@ class Signup extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      username: '',
+      email: '',
       password1: '',
       password2: '',
       error: ''
     };
-    this.handleChangeUsername = this.handleChangeUsername.bind(this);
+    this.handleChangeEmail = this.handleChangeEmail.bind(this);
     this.handleChangePassword1 = this.handleChangePassword1.bind(this);
     this.handleChangePassword2 = this.handleChangePassword2.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChangeUsername(value) {
-    this.setState({username: value});
+  handleChangeEmail(value) {
+    this.setState({email: value});
   }
 
   handleChangePassword1(value) {
@@ -32,16 +32,16 @@ class Signup extends React.Component {
   }
 
   handleSubmit() {
-    if (this.state.username && this.state.password1 && this.state.password1 === this.state.password2) {
-      const username = this.state.username;
+    if (this.state.email && this.state.password1 && this.state.password1 === this.state.password2) {
+      const email = this.state.email;
       const password = this.state.password1;
       this.props.signup({
-        username,
+        email,
         password
       }, this.props.navigation);
       // clear the state after signup for security
       this.setState({
-        username: '',
+        email: '',
         password1: '',
         password2: '',
         error: ''
@@ -50,7 +50,7 @@ class Signup extends React.Component {
       this.setState({
         password1: '',
         password2: '',
-        error: 'Username and password cannot be empty.  Passwords must also match.'
+        error: 'Email and password cannot be empty.  Passwords must also match.'
       });
     }
   }
@@ -60,14 +60,14 @@ class Signup extends React.Component {
     <KeyboardAvoidingView behavior="position" style={styles.container}>
       <ScrollView>
         <Text style={styles.error}>{this.state.error}</Text>
-        <Text style={styles.textLabel}>Enter a Username</Text>
+        <Text style={styles.textLabel}>Enter a Email</Text>
         <TextInput
           style={styles.textInput}
           autoCapitalize="none"
           autoCorrect={false}
           maxLength={15}
-          value={this.state.username}
-          onChangeText={(username) => this.handleChangeUsername(username)}
+          value={this.state.email}
+          onChangeText={(email) => this.handleChangeEmail(email)}
         />
         <Text style={styles.textLabel}>Enter a Password</Text>
         <TextInput

@@ -15,9 +15,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-generated/node_modules
-generated/public
-generated/.expo/
-npm-debug.log
-.DS_Store
