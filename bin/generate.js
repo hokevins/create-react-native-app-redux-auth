@@ -1,9 +1,8 @@
 var bluebird = require('bluebird');
 var path = require('path');
 var chalk = require('chalk');
-var fs = require('fs');
 var ncp = bluebird.promisify(require('ncp').ncp);
-var rename = bluebird.promisify(fs.rename);
+var rename = bluebird.promisify(require('fs').rename);
 
 ncp.limit = 16;
 
@@ -31,17 +30,7 @@ var renameGitignore = function () {
 };
 
 console.log(chalk.green('Generating your new, poppin\' fresh application...'));
-
-copyFiles()
-.then(renameGitignore)
-.then(fs.writeFile(path.join(__dirname, './package.json'), 'TEST', function (err) {
-  if (err) throw err;
-  console.log('Saved!');
-}))
-.then(function () {
-  console.log(chalk.blue('All done!'));
-  console.log(chalk.red('Do not forget to'), chalk.yellow('npm install!'));
-})
-.catch(function (err) {
-  console.error(err);
+copyFiles().then(renameGitignore).then(function () {
+    console.log(chalk.green('...done.'));
+    console.log(chalk.red('Do not forget to npm install!'));
 });

@@ -1,2 +1,2 @@
-const IP = 'create-react-native-app-redux-auth-demo-IP';
+const IP = 'YOUR-IP-GOES-HERE';
 export default IP;
