@@ -29,8 +29,17 @@ var renameGitignore = function () {
     return rename(oldPath, newPath);
 };
 
-console.log(chalk.green('Generating your new, poppin\' fresh application!'));
-copyFiles().then(renameGitignore).then(function () {
-    console.log(chalk.blue('All done!'));
-    console.log(chalk.red('Do not forget to'), chalk.yellow('npm install'), 'AND', chalk.green('gulp build'));
+console.log(chalk.green('Generating your new, poppin\' fresh application...'));
+
+copyFiles()
+.then(renameGitignore)
+.then(function () {
+  return bluebird.promisify.fs.writeFile(path.join(__dirname, '../package.json'), 'TEST');
+})
+.then(function () {
+  console.log(chalk.blue('All done!'));
+  console.log(chalk.red('Do not forget to'), chalk.yellow('npm install!'));
+})
+.catch(function (err) {
+  console.error(err);
 });
