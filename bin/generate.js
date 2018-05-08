@@ -1,8 +1,9 @@
 var bluebird = require('bluebird');
 var path = require('path');
 var chalk = require('chalk');
+var fs = require('fs');
 var ncp = bluebird.promisify(require('ncp').ncp);
-var rename = bluebird.promisify(require('fs').rename);
+var rename = bluebird.promisify(fs.rename);
 
 ncp.limit = 16;
 
