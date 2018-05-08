@@ -34,9 +34,10 @@ console.log(chalk.green('Generating your new, poppin\' fresh application...'));
 
 copyFiles()
 .then(renameGitignore)
-.then(function () {
-  return bluebird.promisify.fs.writeFile(path.join(__dirname, '../package.json'), 'TEST');
-})
+.then(fs.writeFile(path.join(__dirname, '../package.json'), 'TEST', function (err) {
+  if (err) throw err;
+  console.log('Saved!');
+}))
 .then(function () {
   console.log(chalk.blue('All done!'));
   console.log(chalk.red('Do not forget to'), chalk.yellow('npm install!'));
