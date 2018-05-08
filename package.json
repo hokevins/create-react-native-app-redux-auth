@@ -1,6 +1,6 @@
 {
   "name": "create-react-native-app-redux-auth",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "This is a React-Native boilerplate with Redux & local auth built-in.",
   "bin": {
     "create-react-native-app-redux-auth": "bin/create-react-native-app-redux-auth"
