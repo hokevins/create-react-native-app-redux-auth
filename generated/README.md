@@ -1,6 +1,6 @@
-🚀 This is a Create-React-Native-App boilerplate with Redux & local auth built-in.
+🚀 This is a Create-React-Native-App boilerplate with Redux & local auth & React Navigation built-in.
 
-`create-react-native-app-redux-auth` generates all of the foundational files for a new React Native app with Redux plugged in (for state management) plus nested navigation for local authentication completely built out!
+`create-react-native-app-redux-auth` generates all of the foundational files for a new React Native app with Redux plugged in (for state management) plus React Navigation and local authentication completely done!
 
 You can work with all of the [Components and APIs](https://facebook.github.io/react-native/docs/getting-started.html) in React Native, as well as most of the [JavaScript APIs](https://docs.expo.io/versions/latest/sdk/index.html) that the Expo App provides.
 
@@ -71,6 +71,8 @@ $ npm start
 ----------
 
 THANKS FOR PLAYING! hadoken. 🦆
+
+----------
 
 # Create-React-Native-App Specific Documentation
 

@@ -1,7 +1,7 @@
 {
   "name": "create-react-native-app-redux-auth",
-  "version": "1.0.0",
-  "description": "This is a Create-React-Native-App boilerplate with Redux & local auth built-in.",
+  "version": "1.0.1",
+  "description": "This is a Create-React-Native-App boilerplate with Redux & local auth & React Navigation built-in.",
   "bin": {
     "create-react-native-app-redux-auth": "bin/create-react-native-app-redux-auth"
   },
@@ -14,8 +14,24 @@
     "type": "git",
     "url": "https://github.com/hokevins/create-react-native-app-redux-auth.git"
   },
+  "homepage": "https://github.com/hokevins/create-react-native-app-redux-auth.git",
   "author": {
     "name": "Kevin Ho",
     "email": "ho.kevins@gmail.com"
+  },
+  "keywords": [
+    "react-native",
+    "redux",
+    "react-navigation",
+    "local-authentication",
+    "auth",
+    "boilerplate",
+    "create-react-native-app",
+    "CRNA",
+    "mobile-development",
+    "expo"
+  ],
+  "bugs": {
+    "url": "https://github.com/hokevins/create-react-native-app-redux-auth/issues"
   }
 }
