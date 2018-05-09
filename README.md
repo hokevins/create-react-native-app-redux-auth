@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 ## Screenshots
 
-![iPhone X Screenshot DEMO 1](assets/demo1.png)
+![iPhone X Screenshot DEMO 1](assets/demo1.jpg)
 
 ![iPhone X Screenshot DEMO 2](assets/demo2.png)
 
