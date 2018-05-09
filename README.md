@@ -12,12 +12,12 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 Make sure you have Node v6 or later installed. No Xcode or Android Studio installation is required.
 
-### STEP 1:  Installation
+### Step 1:  Installation
 
 ```bash
 $ npm install -g create-react-native-app-redux-auth
 ```
-### STEP 2:  Scaffolding
+### Step 2:  Scaffolding
 
 The `create-react-native-app-redux-auth` command-line tool can be used in a couple different ways.
 
@@ -72,7 +72,7 @@ $ npm start
 
 THANKS FOR PLAYING! hadoken. 🦆
 
-# React-Native Specific Documentation
+# Create-React-Native-App Specific Documentation
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
