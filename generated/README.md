@@ -40,7 +40,7 @@ $ create-react-native-app-redux-auth path/to/any/directory/you/prefer
 If you have already made and `cd`'d into a directory, and want to fill it with the new app files, simply use the `.` path.
 
 ```bash
-create-react-native-app-redux-auth . # caution, this will put the new files in your current folder!
+$ create-react-native-app-redux-auth . # caution, this will put the new files in your current folder!
 ```
 
 ### Step 3:  Build
