@@ -6,6 +6,8 @@ You can work with all of the [Components and APIs](https://facebook.github.io/re
 
 # Welcome to `create-react-native-app-redux-auth`!
 
+[A full written tutorial can be found here.](https://www.linkedin.com/pulse/truly-beginners-guide-react-native-lets-make-thing-kevin-ho/)
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app) and [fsg](https://github.com/FullstackAcademy/fsg).
 
 ## Getting Started
