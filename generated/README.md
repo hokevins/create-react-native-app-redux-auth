@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 ## Getting Started
 
-Make sure you have Node v6 or later installed. No Xcode or Android Studio installation is required.
+Make sure you have Node v6 or later installed, as well as the current version of Expo Client 2.5.0 on your mobile device in order to support React Native 0.55. No Xcode or Android Studio installation is required.
 
 ### Step 1:  Installation
 
